@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using System.Data;
+//using MySql.Data.MySqlClient;
+//using System.Data;
 
 namespace WindowsFormsApplication1
 {
     public partial class Form2 : Form
     {   
-        MySqlConnection connection = new MySqlConnection(@"Data source=localhost;port=3306;Initial catalog= airline ;username=root;password=o3Ful8zIBzNt");
+        //MySqlConnection connection = new MySqlConnection(@"Data source=localhost;port=3306;Initial catalog= airline ;username=root;password=o3Ful8zIBzNt");
         public Form2()
         {
             InitializeComponent();
@@ -27,13 +27,20 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connection.Open();
+            //connection.Open();
+            userdata Check = new userdata();
+            Check.Show();
+            Hide();
+           // MySqlCommand command = connection.CreateCommand();
 
-            MySqlCommand command = connection.CreateCommand();
 
 
+            //connection.Close();
+        }
 
-            connection.Close();
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

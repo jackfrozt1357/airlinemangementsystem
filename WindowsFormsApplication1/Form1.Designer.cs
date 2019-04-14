@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -88,17 +88,6 @@
             this.panel2.Size = new System.Drawing.Size(200, 222);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(479, 201);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 222);
-            this.panel3.TabIndex = 2;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -109,6 +98,17 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "ADMIN";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(479, 201);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 222);
+            this.panel3.TabIndex = 2;
             // 
             // label4
             // 
@@ -152,6 +152,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
