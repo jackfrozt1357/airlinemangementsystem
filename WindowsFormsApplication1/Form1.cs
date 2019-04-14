@@ -48,5 +48,12 @@ namespace WindowsFormsApplication1
             Check.Show();
             Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form3 Check = new Form3();
+            Check.Show();
+            Hide();
+        }
     }
 }

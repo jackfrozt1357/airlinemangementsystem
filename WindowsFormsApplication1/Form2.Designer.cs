@@ -38,8 +38,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -79,8 +79,8 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.password);
+            this.splitContainer1.Panel2.Controls.Add(this.username);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Size = new System.Drawing.Size(729, 314);
@@ -176,21 +176,21 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Password";
             // 
-            // textBox1
+            // username
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(87, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 3;
+            this.username.BackColor = System.Drawing.SystemColors.Window;
+            this.username.ForeColor = System.Drawing.Color.Black;
+            this.username.Location = new System.Drawing.Point(87, 99);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(150, 20);
+            this.username.TabIndex = 3;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(87, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
-            this.textBox2.TabIndex = 4;
+            this.password.Location = new System.Drawing.Point(87, 173);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(150, 20);
+            this.password.TabIndex = 4;
             // 
             // button1
             // 
@@ -202,6 +202,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Log In";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
@@ -212,6 +213,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -236,8 +238,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
 
