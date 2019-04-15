@@ -60,5 +60,10 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

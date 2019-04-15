@@ -32,8 +32,8 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string firstname = this.firstname.Text;
-            string lastname = this.lastname.Text;
+            string firstname = this.firstname1.Text;
+            string lastname = this.lastname1.Text;
             string destination = this.destination.SelectedText;
             string fclass = this.flightclass.SelectedText;
             string departtime = this.departtime.SelectedText;
@@ -85,6 +85,16 @@ namespace WindowsFormsApplication1
         private void firstname_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void userdata_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

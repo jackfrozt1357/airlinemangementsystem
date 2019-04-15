@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.button1 = new System.Windows.Forms.Button();
             this.password1 = new System.Windows.Forms.TextBox();
             this.username1 = new System.Windows.Forms.TextBox();
@@ -38,8 +38,11 @@
             this.username = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.password = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -57,7 +60,7 @@
             // 
             // password1
             // 
-            this.password1.Location = new System.Drawing.Point(298, 82);
+            this.password1.Location = new System.Drawing.Point(53, 96);
             this.password1.Name = "password1";
             this.password1.Size = new System.Drawing.Size(150, 20);
             this.password1.TabIndex = 4;
@@ -67,7 +70,7 @@
             // 
             this.username1.BackColor = System.Drawing.SystemColors.Window;
             this.username1.ForeColor = System.Drawing.Color.Black;
-            this.username1.Location = new System.Drawing.Point(256, 40);
+            this.username1.Location = new System.Drawing.Point(86, 34);
             this.username1.Name = "username1";
             this.username1.Size = new System.Drawing.Size(150, 20);
             this.username1.TabIndex = 3;
@@ -76,7 +79,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(151)))));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(215)))), ((int)(((byte)(251)))));
             this.label6.Location = new System.Drawing.Point(41, 150);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
@@ -86,7 +89,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(151)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(215)))), ((int)(((byte)(251)))));
             this.label5.Location = new System.Drawing.Point(39, 53);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
@@ -102,7 +105,7 @@
             this.username.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.username.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.username.ForeColor = System.Drawing.Color.Black;
             this.username.isPassword = false;
             this.username.Location = new System.Drawing.Point(30, 70);
             this.username.Margin = new System.Windows.Forms.Padding(4);
@@ -122,8 +125,8 @@
             this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.password.isPassword = false;
-            this.password.Location = new System.Drawing.Point(30, 167);
+            this.password.isPassword = true;
+            this.password.Location = new System.Drawing.Point(30, 150);
             this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.MaxLength = 32767;
             this.password.Name = "password";
@@ -134,6 +137,8 @@
             // 
             // bunifuShadowPanel1
             // 
+            this.bunifuShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.White;
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.Gainsboro;
             this.bunifuShadowPanel1.Controls.Add(this.bunifuButton1);
             this.bunifuShadowPanel1.Controls.Add(this.username);
@@ -147,6 +152,16 @@
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(426, 303);
             this.bunifuShadowPanel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(434, 140);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "USER LOGIN";
             // 
             // bunifuButton1
             // 
@@ -164,37 +179,54 @@
             this.bunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.bunifuButton1.IdleBorderRadius = 1;
             this.bunifuButton1.IdleBorderThickness = 0;
-            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(215)))), ((int)(((byte)(251)))));
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.Location = new System.Drawing.Point(96, 237);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 1;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.BorderRadius = 1;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties3;
             this.bunifuButton1.Size = new System.Drawing.Size(210, 45);
             this.bunifuButton1.TabIndex = 8;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.exit;
+            this.pictureBox1.Location = new System.Drawing.Point(764, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(215)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(876, 510);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.password1);
             this.Controls.Add(this.username1);
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,6 +243,8 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox password;
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
 
 
