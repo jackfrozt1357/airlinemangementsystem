@@ -65,5 +65,13 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            register open = new register();
+
+            open.Show();
+            this.Hide();
+        }
     }
 }

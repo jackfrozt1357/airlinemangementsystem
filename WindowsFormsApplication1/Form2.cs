@@ -154,5 +154,13 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {   
+            if(this.password.isPassword == false)
+            this.password.isPassword = true;
+            else
+                this.password.isPassword = false;
+        }
     }
 }

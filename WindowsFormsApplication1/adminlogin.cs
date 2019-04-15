@@ -92,7 +92,10 @@ namespace WindowsFormsApplication1
 
         private void bunifuMetroTextbox2_OnValueChanged(object sender, EventArgs e)
         {
-
+            if (this.password.isPassword == false)
+                this.password.isPassword = true;
+            else
+                this.password.isPassword = false;
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
