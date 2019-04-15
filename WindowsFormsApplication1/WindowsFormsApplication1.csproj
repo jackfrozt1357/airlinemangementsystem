@@ -54,6 +54,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\..\..\Downloads\Bunifu Ui Winform 1.10.0.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu Ui Winform 1.10.0.0\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\..\Downloads\Bunifu Ui Winform 1.10.0.0\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>

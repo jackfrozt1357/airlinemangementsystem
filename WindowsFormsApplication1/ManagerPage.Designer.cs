@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(100, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(137, 48);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(559, 285);
             this.dataGridView1.TabIndex = 0;
@@ -57,5 +58,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

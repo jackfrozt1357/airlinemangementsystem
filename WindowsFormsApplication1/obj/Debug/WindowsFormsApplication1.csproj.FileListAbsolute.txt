@@ -27,3 +27,5 @@ C:\Users\adetu\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\Wi
 C:\Users\adetu\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.xml
 C:\Users\adetu\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
 C:\Users\adetu\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\adetu\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\adetu\Documents\Visual Studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml

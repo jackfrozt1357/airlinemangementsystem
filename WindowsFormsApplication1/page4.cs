@@ -92,5 +92,56 @@ namespace WindowsFormsApplication1
                 }
             }*/
         }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            Form1 page = new Form1();
+            page.Show();
+            this.Hide();
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            string connectionString = "data source =127.0.0.1; port = 3306; " +
+              "username = root; database = airline;";
+
+            //assign each value to each row in the engineer table
+            string query = "DELETE FROM `bookings` WHERE `First Name` = '" + userdata.f_n + "'";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (MySqlCommand commandDatabase = new MySqlCommand(query, conn))
+                {
+
+
+                    try
+                    {
+                        commandDatabase.ExecuteNonQuery();
+                        commandDatabase.CommandTimeout = 60;
+                        MessageBox.Show("cancel");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+
+                    }
+
+                }
+            }
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Form2 page = new Form2();
+            page.Show();
+            this.Hide();
+        }
+
+        private void page4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

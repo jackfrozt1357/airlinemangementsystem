@@ -97,8 +97,8 @@ namespace WindowsFormsApplication1
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            string username = this.username1.Text;
-            string password = this.password1.Text;
+            string username = this.username.Text;
+            string password = this.password.Text;
 
 
             //opening connection string for database

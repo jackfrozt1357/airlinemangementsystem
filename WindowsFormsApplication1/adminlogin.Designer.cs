@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminlogin));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.label1 = new System.Windows.Forms.Label();
-            this.username1 = new System.Windows.Forms.TextBox();
-            this.password1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.username = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.password = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.password1 = new System.Windows.Forms.TextBox();
+            this.username1 = new System.Windows.Forms.TextBox();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,21 +54,6 @@
             this.label1.Text = "username";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // username1
-            // 
-            this.username1.Location = new System.Drawing.Point(29, 164);
-            this.username1.Name = "username1";
-            this.username1.Size = new System.Drawing.Size(100, 20);
-            this.username1.TabIndex = 1;
-            this.username1.TextChanged += new System.EventHandler(this.username_TextChanged);
-            // 
-            // password1
-            // 
-            this.password1.Location = new System.Drawing.Point(12, 351);
-            this.password1.Name = "password1";
-            this.password1.Size = new System.Drawing.Size(100, 20);
-            this.password1.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -77,16 +62,6 @@
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "password";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(190, 442);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "log in";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bunifuShadowPanel1
             // 
@@ -164,13 +139,13 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.Location = new System.Drawing.Point(98, 231);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties1;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.BorderRadius = 1;
+            stateProperties6.BorderThickness = 1;
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.IconLeftImage = null;
+            stateProperties6.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties6;
             this.bunifuButton1.Size = new System.Drawing.Size(210, 45);
             this.bunifuButton1.TabIndex = 3;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -183,13 +158,41 @@
             this.bunifuPictureBox1.BorderRadius = 50;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(452, 30);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(461, 29);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(100, 100);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 6;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(190, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "log in";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // password1
+            // 
+            this.password1.Location = new System.Drawing.Point(12, 351);
+            this.password1.Name = "password1";
+            this.password1.Size = new System.Drawing.Size(100, 20);
+            this.password1.TabIndex = 3;
+            this.password1.Visible = false;
+            // 
+            // username1
+            // 
+            this.username1.Location = new System.Drawing.Point(33, 164);
+            this.username1.Name = "username1";
+            this.username1.Size = new System.Drawing.Size(100, 20);
+            this.username1.TabIndex = 1;
+            this.username1.Visible = false;
+            this.username1.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // adminlogin
             // 
@@ -215,14 +218,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox username1;
-        private System.Windows.Forms.TextBox password1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.Framework.UI.BunifuMetroTextbox password;
         private Bunifu.Framework.UI.BunifuMetroTextbox username;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox password1;
+        private System.Windows.Forms.TextBox username1;
     }
 }
