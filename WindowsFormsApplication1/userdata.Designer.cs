@@ -51,7 +51,7 @@
             // 
             // firstname
             // 
-            this.firstname.Location = new System.Drawing.Point(89, 22);
+            this.firstname.Location = new System.Drawing.Point(156, 37);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(100, 20);
             this.firstname.TabIndex = 0;
