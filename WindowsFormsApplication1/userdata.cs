@@ -96,5 +96,12 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Form1 opp = new Form1();
+            opp.Show();
+            this.Hide();
+        }
     }
 }

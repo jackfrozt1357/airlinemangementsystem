@@ -162,5 +162,12 @@ namespace WindowsFormsApplication1
             else
                 this.password.isPassword = false;
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Form1 uu = new Form1();
+            uu.Show();
+            this.Hide();
+        }
     }
 }
