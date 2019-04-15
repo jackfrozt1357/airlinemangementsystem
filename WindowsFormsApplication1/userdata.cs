@@ -103,5 +103,65 @@ namespace WindowsFormsApplication1
             opp.Show();
             this.Hide();
         }
+
+        private void departtime_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void arrivaltime_TextChanged(object sender, EventArgs e)
+        {/*
+            if (departtime == "8:00am" && origin == "Washington,USA" && destination == "London,England") { arrivaltime = "3:20pm"; }
+            else if (departtime == "10:00am" && origin == "Washington,USA" && destination == "London,England") { arrivaltime = "5:20pm"; }
+            else if (departtime == "12:00pm" && origin == "Washington,USA" && destination == "London,England") { arrivaltime = "7:20pm"; }
+            else if (departtime == "8:00pm" && origin == "Washington,USA" && destination == "London,England") { arrivaltime = "3:20am"; }
+            else if (departtime == "10:00am" && origin == "Washington,USA" && destination == "Dubai,UAE") { arrivaltime = "11:20pm"; }
+            else if (departtime == "12:00pm" && origin == "Washington,USA" && destination == "Dubai,UAE") { arrivaltime = "1:20am"; }
+            else if (departtime == "8:00pm" && origin == "Washington,USA" && destination == "Dubai,UAE") { arrivaltime = "4:20am"; }
+            else if (departtime == "8:00am" && origin == "Washington,USA" && destination == "Dubai,UAE") { arrivaltime = "7:20pm"; }
+            else if (departtime == "10:00am" && origin == "Washington,USA" && destination == "Sao Paolo,Brazil") { arrivaltime = "6:48pm"; }
+            else if (departtime == "12:00pm" && origin == "Washington,USA" && destination == "Sao Paolo,Brazil") { arrivaltime = "8:48pm"; }
+            else if (departtime == "8:00pm" && origin == "Washington,USA" && destination == "Sao Paolo,Brazil") { arrivaltime = "4:48pm"; }
+            else if (departtime == "8:00am" && origin == "Washington,USA" && destination == "Sao Paolo,Brazil") { arrivaltime = "4:48am"; }
+            else if (departtime == "10:00am" && origin == "London,England" && destination == "Sao Paolo,Brazil") { arrivaltime = "7:30pm"; }
+            else if (departtime == "12:00pm" && origin == "London,England" && destination == "Sao Paolo,Brazil") { arrivaltime = "11:30pm"; }
+            else if (departtime == "8:00pm" && origin == "London,England" && destination == "Sao Paolo,Brazil") { arrivaltime = "7:30pm"; }
+            else if (departtime == "8:00am" && origin == "London,England" && destination == "Sao Paolo,Brazil") { arrivaltime = "6:20am"; }
+            else if (departtime == "10:00am" && origin == "London,England" && destination == "Dubai,UAE") { arrivaltime = "5:00pm"; }
+            else if (departtime == "12:00pm" && origin == "London,England" && destination == "Dubai,UAE") { arrivaltime = "7:00pm"; }
+            else if (departtime == "8:00pm" && origin == "London,England" && destination == "Dubai,UAE") { arrivaltime = "3:00am"; }
+            else if (departtime == "8:00am" && origin == "London,England" && destination == "Dubai,UAE") { arrivaltime = "3:00pm"; }
+            else if (departtime == "10:00am" && origin == "London,England" && destination == "Washington,USA") { arrivaltime = "5:20pm"; }
+            else if (departtime == "12:00pm" && origin == "London,England" && destination == "Washington,USA") { arrivaltime = "7:20pm"; }
+            else if (departtime == "8:00pm" && origin == "London,England" && destination == "Washington,USA") { arrivaltime = "3:20am"; }
+            else if (departtime == "8:00am" && origin == "London,England" && destination == "Washington,USA") { arrivaltime = "3:20pm"; }
+            else if (departtime == "10:00am" && origin == "Sao Paolo,Brazil" && destination == "Washington,USA") { arrivaltime = "6:48pm"; }
+            else if (departtime == "12:00pm" && origin == "Sao Paolo,Brazil" && destination == "Washington,USA") { arrivaltime = "8:48pm"; }
+            else if (departtime == "8:00pm" && origin == "Sao Paolo,Brazil" && destination == "Washington,USA") { arrivaltime = "4:48pm"; }
+            else if (departtime == "8:00am" && origin == "Sao Paolo,Brazil" && destination == "Washington,USA") { arrivaltime = "4:48am"; }
+            else if (departtime == "10:00am" && origin == "Sao Paolo,Brazil" && destination == "Dubai,UAE") { arrivaltime = "6:48pm"; }
+            else if (departtime == "12:00pm" && origin == "Sao Paolo,Brazil" && destination == "Dubai,UAE") { arrivaltime = "8:48pm"; }
+            else if (departtime == "8:00pm" && origin == "Sao Paolo,Brazil" && destination == "Dubai,UAE") { arrivaltime = "4:48pm"; }
+            else if (departtime == "8:00am" && origin == "Sao Paolo,Brazil" && destination == "Dubai,UAE") { arrivaltime = "4:48am"; }
+            else if (departtime == "8:00am" && origin == "Sao Paolo,Brazil" && destination == "London,England") { arrivaltime = "4:48am"; }
+            else if (departtime == "10:00am" && origin == "Sao Paolo,Brazil" && destination == "London,England") { arrivaltime = "5:00pm"; }
+            else if (departtime == "12:00pm" && origin == "Sao Paolo,Brazil" && destination == "London,England") { arrivaltime = "7:20pm"; }
+            else if (departtime == "8:00pm" && origin == "Sao Paolo,Brazil" && destination == "London,England") { arrivaltime = "3:00pm"; }
+            else if (departtime == "10:00am" && origin == "Dubai,UAE" && destination == "Washington,USA") { arrivaltime = "11:20pm"; }
+            else if (departtime == "12:00pm" && origin == "Dubai,UAE" && destination == "Washington,USA") { arrivaltime = "1:20am"; }
+            else if (departtime == "8:00pm" && origin == "Dubai,UAE" && destination == "Washington,USA") { arrivaltime = "4:20am"; }
+            else if (departtime == "8:00am" && origin == "Dubai,UAE" && destination == "Washington,USA") { arrivaltime = "4:20pm"; }
+            else if (departtime == "10:00am" && origin == "Dubai,UAE" && destination == "Sao Paolo,Brazil") { arrivaltime = "6:48pm"; }
+            else if (departtime == "12:00pm" && origin == "Dubai,UAE" && destination == "Sao Paolo,Brazil") { arrivaltime = "8:48pm"; }
+            else if (departtime == "8:00pm" && origin == "Dubai,UAE" && destination == "Sao Paolo,Brazil") { arrivaltime = "4:48pm"; }
+            else if (departtime == "8:00am" && origin == "Dubai,UAE" && destination == "Sao Paolo,Brazil") { arrivaltime = "4:48am"; }
+            else if (departtime == "10:00am" && origin == "Dubai,UAE" && destination == "London,England") { arrivaltime = "5:00pm"; }
+            else if (departtime == "12:00pm" && origin == "Dubai,UAE" && destination == "London,England") { arrivaltime = "7:00pm"; }
+            else if (departtime == "8:00pm" && origin == "Dubai,UAE" && destination == "London,England") { arrivaltime = "3:00am"; }
+            else if (departtime == "8:00am" && origin == "Dubai,UAE" && destination == "London,England") { arrivaltime = "3:00pm"; }
+            */
+
+
+        }
     }
 }

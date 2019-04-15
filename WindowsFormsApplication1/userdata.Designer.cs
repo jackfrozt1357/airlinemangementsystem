@@ -134,10 +134,9 @@
             // 
             this.origin.FormattingEnabled = true;
             this.origin.Items.AddRange(new object[] {
-            "Paris,France",
-            "U.S.A,New-York",
-            "Nigeria,Lagos",
-            ""});
+            "London,England",
+            "Washington,USA",
+            "Dubai,UAE"});
             this.origin.Location = new System.Drawing.Point(43, 43);
             this.origin.Name = "origin";
             this.origin.Size = new System.Drawing.Size(235, 21);
@@ -174,6 +173,7 @@
             this.departtime.Name = "departtime";
             this.departtime.Size = new System.Drawing.Size(121, 21);
             this.departtime.TabIndex = 13;
+            this.departtime.SelectedIndexChanged += new System.EventHandler(this.departtime_SelectedIndexChanged);
             // 
             // arrivaltime
             // 
@@ -181,6 +181,7 @@
             this.arrivaltime.Name = "arrivaltime";
             this.arrivaltime.Size = new System.Drawing.Size(100, 20);
             this.arrivaltime.TabIndex = 14;
+            this.arrivaltime.TextChanged += new System.EventHandler(this.arrivaltime_TextChanged);
             // 
             // flightclass
             // 
@@ -216,10 +217,9 @@
             // 
             this.destination.FormattingEnabled = true;
             this.destination.Items.AddRange(new object[] {
-            "Paris,France",
-            "U.S.A,New-York",
-            "Nigeria,Lagos",
-            ""});
+            "Washington,USA",
+            "London,England",
+            "Dubai,UAE"});
             this.destination.Location = new System.Drawing.Point(43, 186);
             this.destination.Name = "destination";
             this.destination.Size = new System.Drawing.Size(235, 21);
