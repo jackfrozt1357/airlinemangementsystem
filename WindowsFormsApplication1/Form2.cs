@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 //using System.Data;
 
 namespace WindowsFormsApplication1
 {
     public partial class Form2 : Form
     {   
-        //MySqlConnection connection = new MySqlConnection(@"Data source=localhost;port=3306;Initial catalog= airline ;username=root;password=o3Ful8zIBzNt");
+        
         public Form2()
         {
             InitializeComponent();
@@ -27,15 +27,60 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //connection.Open();
-            userdata Check = new userdata();
-            Check.Show();
-            Hide();
-           // MySqlCommand command = connection.CreateCommand();
+            string username = this.username.Text;
+            string password = this.password.Text;
 
 
+            //opening connection string for database
+            string connectionString = "data source =127.0.0.1; port = 3306; " +
+                "username = root; database = airline;";
 
-            //connection.Close();
+            //assign each value to each row in the engineer table
+            string query = "select username, Password from create_account where username = @username " +
+                "and Password = @password ";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (MySqlCommand commandDatabase = new MySqlCommand(query, conn))
+                {
+
+                    commandDatabase.Parameters.AddWithValue("@username", username);
+                    commandDatabase.Parameters.AddWithValue("@password", password);
+
+                    //establish connection with database and update
+                    try
+                    {
+                        MySqlDataAdapter da = new MySqlDataAdapter(commandDatabase);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        if (dt.Rows.Count > 0)
+                        {
+                            userdata reg = new userdata();
+                            reg.Show();
+
+                            commandDatabase.ExecuteNonQuery();
+                            commandDatabase.CommandTimeout = 60;
+
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Login. Please check username and password");
+                        }
+
+
+                        conn.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+
+                    }
+                }
+            }
+          
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)

@@ -21,5 +21,27 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string firstname = this.firstname.Text;
+            string lastname = this.lastname.Text;
+            string destination = this.destination.SelectedText;
+            string fclass = this.flightclass.SelectedText;
+            string departtime = this.departtime.SelectedText;
+            string airline = this.airline.SelectedText;
+            string noofticket = this.numticket.SelectedText;
+            string origin = this.origin.SelectedText;
+
+            if (firstname=="" )
+            {
+                MessageBox.Show("fill all"); return;
+            }
+        }
     }
 }
