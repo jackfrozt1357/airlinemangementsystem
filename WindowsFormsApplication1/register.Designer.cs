@@ -37,12 +37,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.ppassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.apassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.ausername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -140,6 +141,7 @@
             this.bunifuButton1.Size = new System.Drawing.Size(210, 45);
             this.bunifuButton1.TabIndex = 7;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // bunifuButton2
             // 
@@ -172,29 +174,30 @@
             this.bunifuButton2.Size = new System.Drawing.Size(210, 45);
             this.bunifuButton2.TabIndex = 12;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
-            // ppassword
+            // apassword
             // 
-            this.ppassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.ppassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.ppassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.ppassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ppassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.ppassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ppassword.HintForeColor = System.Drawing.Color.Empty;
-            this.ppassword.HintText = "";
-            this.ppassword.isPassword = false;
-            this.ppassword.LineFocusedColor = System.Drawing.Color.Blue;
-            this.ppassword.LineIdleColor = System.Drawing.Color.Gray;
-            this.ppassword.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.ppassword.LineThickness = 3;
-            this.ppassword.Location = new System.Drawing.Point(468, 277);
-            this.ppassword.Margin = new System.Windows.Forms.Padding(4);
-            this.ppassword.MaxLength = 32767;
-            this.ppassword.Name = "ppassword";
-            this.ppassword.Size = new System.Drawing.Size(379, 33);
-            this.ppassword.TabIndex = 11;
-            this.ppassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.apassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.apassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.apassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.apassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.apassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.apassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.apassword.HintForeColor = System.Drawing.Color.Empty;
+            this.apassword.HintText = "";
+            this.apassword.isPassword = false;
+            this.apassword.LineFocusedColor = System.Drawing.Color.Blue;
+            this.apassword.LineIdleColor = System.Drawing.Color.Gray;
+            this.apassword.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.apassword.LineThickness = 3;
+            this.apassword.Location = new System.Drawing.Point(468, 277);
+            this.apassword.Margin = new System.Windows.Forms.Padding(4);
+            this.apassword.MaxLength = 32767;
+            this.apassword.Name = "apassword";
+            this.apassword.Size = new System.Drawing.Size(379, 33);
+            this.apassword.TabIndex = 11;
+            this.apassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -258,16 +261,27 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "REGISTER AN ADMIN";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "HOME";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(215)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(860, 471);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bunifuButton2);
-            this.Controls.Add(this.ppassword);
+            this.Controls.Add(this.apassword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ausername);
             this.Controls.Add(this.label4);
@@ -291,11 +305,12 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox ppassword;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox apassword;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox ausername;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
