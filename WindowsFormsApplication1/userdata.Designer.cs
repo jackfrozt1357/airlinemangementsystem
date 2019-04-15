@@ -55,6 +55,7 @@
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(100, 20);
             this.firstname.TabIndex = 0;
+            this.firstname.TextChanged += new System.EventHandler(this.firstname_TextChanged);
             // 
             // lastname
             // 
